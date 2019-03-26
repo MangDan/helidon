@@ -14,15 +14,13 @@
 # limitations under the License.
 #
 
-# Application properties. This is the default greeting
-app.greeting=Hello
+app:
+  greeting: "Hello"
 
-# Microprofile server properties
-server.port=8080
-server.host=0.0.0.0
-
-# Using HikariDataSource instead of javax.sql.DataSource to enable connection pool
-javax.sql.DataSource.oracle.dataSourceClassName=oracle.jdbc.pool.OracleDataSource
-javax.sql.DataSource.oracle.dataSource.url = jdbc:oracle:thin:@129.213.53.51:1521:MSAAPIDB
-javax.sql.DataSource.oracle.dataSource.user = apidev
-javax.sql.DataSource.oracle.dataSource.password = Welcome123
+server:
+  port: 8080
+  host: 0.0.0.0
+#  experimental:
+#    http2:
+#      enable: true
+#      max-content-length: 16384
